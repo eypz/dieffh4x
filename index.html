@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die ffh4x Panel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0f0f1a;
+            color: #e5e5e5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            color: #00e5ff;
+            text-shadow: 0 0 8px #00e5ff, 0 0 16px #00e5ff, 0 0 24px #00e5ff;
+            position: relative;
+            animation: glitch 1.5s infinite;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        .feature {
+            background-color: rgba(255, 0, 255, 0.1);
+            border: 2px solid #ff00ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+            transition: transform 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+        }
+        .feature::before, .feature::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(45deg, transparent, #ff00ff, transparent);
+            opacity: 0.2;
+            animation: scan 3s linear infinite;
+        }
+        @keyframes scan {
+            0% { top: -100%; }
+            100% { top: 100%; }
+        }
+        .feature h2 {
+            font-size: 2em;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+            animation: glitch 1s infinite alternate;
+        }
+        .feature p {
+            font-size: 1.1em;
+            color: #c2c2c2;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: #00e5ff;
+            margin-top: 30px;
+            text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Die ffh4x Panel</h1>
+        <p>Enhance your Free Fire gameplay with advanced features.</p>
+        
+        <div class="feature">
+            <h2>AntiBan</h2>
+            <p>Protect your account with our advanced AntiBan feature, keeping you safe while enjoying premium functionalities.</p>
+        </div>
+        
+        <div class="feature">
+            <h2>Magic Bullet</h2>
+            <p>Maximize your accuracy with Magic Bullet, allowing you to hit targets precisely every time.</p>
+        </div>
+        
+        <div class="feature">
+            <h2>Auto Aim</h2>
+            <p>Enhance your gameplay with Auto Aim, ensuring quick and accurate targeting during matches.</p>
+        </div>
+        
+        <div class="contact-info">
+            <p>Contact us on Discord: <strong>die_xit</strong></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Die ffh4x Panel | Free Fire Enhancement Tools</p>
+    </div>
+</body>
+</html>
